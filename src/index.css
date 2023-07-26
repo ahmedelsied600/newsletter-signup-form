@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Robotox";
+    font-weight: 400;
+    src: url("./assets/fonts/Roboto-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Robotox";
+    font-weight: 700;
+    src: url("./assets/fonts/Roboto-Bold.ttf");
+  }
+  body {
+    font-family: "Robotox";
+    color: theme("colors.dark-navy");
+  }
+  .btn {
+    @apply w-full h-[56px] rounded-lg font-bold text-white mt-3 bg-dark-navy flex justify-center items-center hover:bg-primary transition-all duration-500 ease-in-out;
+  }
+  h1 {
+    @apply font-[700] text-[40px];
+  }
+}
